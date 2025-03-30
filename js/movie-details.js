@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", () => {
       duration: "133 min",
       genre: "Biographical Drama Thriller",
       releaseDate: "January 30, 2025",
-      image: "assets/image/Rani.jpg",
+      image: "assets/posters/Rani.jpg",
       banner: "assets/banners/Rani-banner.jpg",
       synopsis:
         "Rani is a biographical drama based on the true story of Dr. Manorani Saravanamuttu's relentless pursuit of justice after the abduction and murder of her son, journalist Richard de Zoysa, in 1990. Directed by Asoka Handagama, the film portrays a mother's unwavering courage against political oppression.",
@@ -54,7 +54,7 @@ document.addEventListener("DOMContentLoaded", () => {
       duration: "106 min",
       genre: "Drama",
       releaseDate: "December 14, 2023",
-      image: "",
+      image: "assets/posters/Ape-Peincipal",
       banner: "assets/banners/Ape-Principal.jpg",
       synopsis:
         "A new female principal's efforts to combat drug abuse and corruption within a struggling village school, Mihinpura Vidyalaya, with the help of villagers and students, facing opposition from drug lords and politicians.",
@@ -69,7 +69,7 @@ document.addEventListener("DOMContentLoaded", () => {
       duration: "115 min",
       genre: "Comedy",
       releaseDate: "2025",
-      image: "assets/image/Kasi-wasi.jpg",
+      image: "assets/posters/Kasi-wasi.jpg",
       banner: "assets/banners/Kasi-Wasi.jpg",
       synopsis:
         "Mr. Amarabandu is a funeral director who manages his business with the help of three assistants. However, these assistants frequently create challenges for the business. Meanwhile, Vishwakarma joins Mr.            Amarabandu's team with the aim of improving and developing the funeral service operations.",
@@ -84,7 +84,7 @@ document.addEventListener("DOMContentLoaded", () => {
       duration: "180 min",
       genre: "Biography/Drama",
       releaseDate: "July 21, 2023",
-      image: "assets/image/Oppenheimer.jpg",
+      image: "assets/posters/Oppenheimer.jpg",
       banner: "assets/banners/oppenheimer-banner.jpg",
       synopsis:
         "The story of American scientist J. Robert Oppenheimer and his role in the development of the atomic bomb during World War II, exploring the moral complexities and consequences of his work.",
@@ -99,7 +99,7 @@ document.addEventListener("DOMContentLoaded", () => {
       duration: "Not available",
       genre: "Adventure/Drama/Sci-Fi",
       releaseDate: "November 20, 2025",
-      image: "assets/image/Part Two.jpg",
+      image: "assets/posters/Part Two.jpg",
       banner: "assets/banners/dune-two-banner.jpg", 
       synopsis:
         "The sequel to the 2021 film 'Dune,' continuing the adaptation of Frank Herbert's science fiction novel, focusing on Paul Atreides' journey among the Fremen and his rise against the galactic empire.",
@@ -114,7 +114,7 @@ document.addEventListener("DOMContentLoaded", () => {
       duration: "115 min",
       genre: "Action/Sci-Fi",
       releaseDate: "March 15, 2025",
-      image: "assets/image/godzilla_x_kong.jpg",
+      image: "assets/posters/godzilla_x_kong.jpg",
       banner: "assets/banners/godzilla-x-kong-banner.jpg", // Assumed consistent format
       synopsis:
         "The epic next chapter in the cinematic Monsterverse pits the almighty Kong and the fearsome Godzilla against a colossal undiscovered threat hidden within our world, challenging their very existence—and our own.",
@@ -151,25 +151,25 @@ document.addEventListener("DOMContentLoaded", () => {
       id: "2",
       title: "Ape Principal",
       duration: "106 min",
-      image: "assets/image/Ape-Principal.png",
+      image: "assets/posters/Ape-Principal.png",
     },
     {
       id: "3",
       title: "Kaasi Waasi",
       duration: "115 min",
-      image: "assets/image/Kasi-wasi.jpg",
+      image: "assets/posters/Kasi-wasi.jpg",
     },
     {
       id: "4",
       title: "Oppenheimer",
       duration: "180 min",
-      image: "assets/image/Oppenheimer.jpg", // Consistent with the path in moviesData
+      image: "assets/posters/Oppenheimer.jpg", // Consistent with the path in moviesData
     },
     {
       id: "5",
       title: "Dune: Part II",
       duration: "142 min",
-      image: "assets/image/Part Two.jpg",
+      image: "assets/posters/Part Two.jpg",
     },
   ]
 
