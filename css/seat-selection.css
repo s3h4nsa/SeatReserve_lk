@@ -1,0 +1,358 @@
+/* 
+* CSS file for the SeatReserve.lk seat selection page
+* This file contains all styles for the seat selection page including:
+* - Global styles (imported from home.css)
+* - Movie info bar
+* - Seating chart
+* - Seat legend
+* - Selection summary
+* - Ticket types and quantity selectors
+* - Responsive design
+*/
+
+/* ---------- Import Global Styles ---------- */
+@import url("home.css");
+
+/* ---------- Movie Info Bar ---------- */
+.movie-info-bar {
+  background-color: var(--card-background);
+  padding: var(--spacing-md) 0;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.movie-info-bar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.movie-info h1 {
+  font-size: var(--font-lg);
+  margin-bottom: var(--spacing-xs);
+}
+
+.movie-details {
+  color: var(--text-secondary);
+  font-size: var(--font-sm);
+}
+
+.separator {
+  margin: 0 var(--spacing-xs);
+}
+
+.timer {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+/* ---------- Seat Selection ---------- */
+.seat-selection {
+  padding: var(--spacing-xl) 0;
+}
+
+.seat-selection-container {
+  background-color: var(--card-background);
+  border-radius: var(--border-radius);
+  padding: var(--spacing-lg);
+  margin-bottom: var(--spacing-xl);
+}
+
+.screen-container {
+  text-align: center;
+  margin-bottom: var(--spacing-xl);
+}
+
+.screen {
+  background-color: #333;
+  color: var(--text-secondary);
+  padding: var(--spacing-xs);
+  width: 80%;
+  margin: 0 auto;
+  border-radius: var(--border-radius);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  font-size: var(--font-xs);
+  letter-spacing: 2px;
+}
+
+.seating-chart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-xs);
+  margin-bottom: var(--spacing-lg);
+}
+
+.seat-row {
+  display: flex;
+  gap: var(--spacing-xs);
+  align-items: center;
+}
+
+.row-label {
+  width: 30px;
+  text-align: center;
+  font-size: var(--font-xs);
+  color: var(--text-secondary);
+}
+
+.seat {
+  width: 30px;
+  height: 30px;
+  border-radius: 5px 5px 0 0;
+  margin: 2px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  color: rgba(255, 255, 255, 0.7);
+  transition: all 0.2s ease;
+}
+
+.seat.available {
+  background-color: #444;
+}
+
+.seat.selected {
+  background-color: var(--primary-color);
+}
+
+.seat.premium {
+  background-color: var(--secondary-color);
+}
+
+.seat.occupied {
+  background-color: #333;
+  cursor: not-allowed;
+}
+
+.seat.available:hover {
+  background-color: #555;
+  transform: scale(1.1);
+}
+
+.seat-legend {
+  display: flex;
+  justify-content: center;
+  gap: var(--spacing-lg);
+  margin-top: var(--spacing-lg);
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  font-size: var(--font-xs);
+  color: var(--text-secondary);
+}
+
+.legend-item .seat {
+  cursor: default;
+  width: 20px;
+  height: 20px;
+}
+
+.legend-item .seat:hover {
+  transform: none;
+}
+
+/* ---------- Selection Summary ---------- */
+.selection-summary {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-xl);
+}
+
+.selected-seats,
+.ticket-summary {
+  background-color: var(--card-background);
+  border-radius: var(--border-radius);
+  padding: var(--spacing-lg);
+}
+
+.selected-seats h2,
+.ticket-summary h2 {
+  font-size: var(--font-md);
+  margin-bottom: var(--spacing-md);
+}
+
+.selected-seats-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-xs);
+}
+
+.selected-seat-badge {
+  background-color: var(--primary-color);
+  color: white;
+  padding: var(--spacing-xs) var(--spacing-sm);
+  border-radius: var(--border-radius);
+  font-size: var(--font-xs);
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+}
+
+.selected-seat-badge i {
+  cursor: pointer;
+}
+
+.no-seats {
+  color: var(--text-secondary);
+  font-size: var(--font-xs);
+}
+
+/* ---------- Ticket Types ---------- */
+.ticket-types {
+  margin-bottom: var(--spacing-lg);
+}
+
+.ticket-type {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--spacing-sm) 0;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.ticket-type:last-child {
+  border-bottom: none;
+}
+
+.ticket-type-info {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+}
+
+.ticket-price {
+  color: var(--text-secondary);
+}
+
+/* Update ticket price display to consistently use Rs. instead of $ */
+.ticket-type-info span.ticket-price {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.ticket-quantity {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+}
+
+.quantity-btn {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 1px solid var(--border-color);
+  color: var(--text-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: var(--font-md);
+  line-height: 1;
+}
+
+.quantity-btn:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.quantity-btn.minus {
+  padding-bottom: 3px;
+}
+
+.quantity {
+  font-weight: 600;
+  min-width: 20px;
+  text-align: center;
+}
+
+/* ---------- Total Section ---------- */
+.total-section {
+  margin-top: var(--spacing-lg);
+  padding-top: var(--spacing-md);
+  border-top: 1px solid var(--border-color);
+}
+
+.total-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: var(--spacing-xs);
+  font-size: var(--font-sm);
+}
+
+/* Add styles for currency display */
+.total-row span#subtotal,
+.total-row span#fee,
+.total-row.total span#total {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.total-row.total {
+  font-weight: 700;
+  font-size: var(--font-md);
+  margin-top: var(--spacing-sm);
+  padding-top: var(--spacing-sm);
+  border-top: 1px solid var(--border-color);
+}
+
+.continue-btn {
+  background-color: var(--primary-color);
+  color: white;
+  padding: var(--spacing-sm);
+  border-radius: var(--border-radius);
+  font-weight: 600;
+  width: 100%;
+  margin-top: var(--spacing-lg);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.continue-btn:hover {
+  background-color: #c70812;
+}
+
+.continue-btn:disabled {
+  background-color: #555;
+  cursor: not-allowed;
+}
+
+/* ---------- Responsive Design ---------- */
+@media (max-width: 992px) {
+  .selection-summary {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .movie-info-bar .container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-sm);
+  }
+
+  .seat {
+    width: 25px;
+    height: 25px;
+    margin: 1px;
+  }
+}
+
+@media (max-width: 576px) {
+  .seat-legend {
+    flex-wrap: wrap;
+    gap: var(--spacing-md);
+  }
+
+  .seat {
+    width: 20px;
+    height: 20px;
+  }
+}
+

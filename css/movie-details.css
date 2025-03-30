@@ -1,0 +1,423 @@
+/* 
+* CSS file for the SeatReserve.lk movie details page
+* This file contains all styles for the movie details page including:
+* - Global styles (imported from home.css)
+* - Movie banner
+* - Movie details layout
+* - Showtimes card
+* - Similar movies section
+* - Responsive design
+*/
+
+/* ---------- Import Global Styles ---------- */
+@import url("home.css");
+
+/* ---------- Movie Banner ---------- */
+.movie-banner {
+  position: relative;
+  height: 70vh;
+  overflow: hidden;
+}
+
+.banner-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, var(--background-color), transparent 60%, rgba(0, 0, 0, 0.7));
+  z-index: 1;
+}
+
+.banner-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.banner-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  padding: var(--spacing-xl) 0;
+}
+
+.banner-content .container {
+  display: flex;
+  align-items: flex-end;
+  gap: var(--spacing-lg);
+}
+
+.movie-poster-container {
+  flex-shrink: 0;
+}
+
+.movie-poster {
+  width: 250px;
+  height: 375px;
+  border-radius: var(--border-radius);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+
+.movie-poster img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.movie-info {
+  flex: 1;
+}
+
+.movie-badges {
+  display: flex;
+  gap: var(--spacing-xs);
+  margin-bottom: var(--spacing-sm);
+}
+
+.badge {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 0.25rem 0.5rem;
+  border-radius: var(--border-radius);
+  font-size: var(--font-xs);
+  font-weight: 600;
+}
+
+.badge.outline {
+  background-color: transparent;
+  border: 1px solid var(--text-color);
+}
+
+.movie-title {
+  font-size: 2.5rem;
+  margin-bottom: var(--spacing-sm);
+}
+
+.movie-rating {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  margin-bottom: var(--spacing-md);
+}
+
+.movie-rating i {
+  color: gold;
+}
+
+.movie-rating .rating-score {
+  font-weight: 700;
+}
+
+.movie-rating .rating-source {
+  color: var(--text-secondary);
+}
+
+.movie-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-sm);
+}
+
+.action-btn {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  padding: var(--spacing-sm) var(--spacing-md);
+  border-radius: var(--border-radius);
+  font-weight: 600;
+}
+
+.action-btn.primary {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.action-btn.primary:hover {
+  background-color: #c70812;
+  color: white;
+}
+
+.action-btn.secondary {
+  background-color: transparent;
+  border: 1px solid var(--text-color);
+  color: var(--text-color);
+}
+
+.action-btn.secondary:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* ---------- Movie Details Layout ---------- */
+.movie-details {
+  padding: var(--spacing-xl) 0;
+}
+
+.details-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: var(--spacing-xl);
+}
+
+.details-section {
+  margin-bottom: var(--spacing-lg);
+}
+
+.details-section h2 {
+  font-size: var(--font-lg);
+  margin-bottom: var(--spacing-md);
+}
+
+.details-section p {
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+.separator {
+  height: 1px;
+  background-color: var(--border-color);
+  margin: var(--spacing-lg) 0;
+}
+
+.details-info-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-md);
+}
+
+.details-info h3 {
+  font-weight: 600;
+  margin-bottom: var(--spacing-xs);
+}
+
+.details-info p {
+  color: var(--text-secondary);
+}
+
+.trailer-container {
+  width: 100%;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+}
+
+.trailer-placeholder {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background-color: var(--card-background);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.trailer-placeholder img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.5;
+}
+
+.play-trailer-btn {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 1;
+  transition: all 0.3s ease;
+}
+
+.play-trailer-btn i {
+  font-size: 2rem;
+  color: white;
+}
+
+.play-trailer-btn:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  transform: scale(1.1);
+}
+
+/* ---------- Showtimes Card ---------- */
+.showtimes-card {
+  background-color: var(--card-background);
+  border-radius: var(--border-radius);
+  padding: var(--spacing-lg);
+  position: sticky;
+  top: 90px;
+}
+
+.showtimes-card h2 {
+  font-size: var(--font-lg);
+  margin-bottom: var(--spacing-md);
+}
+
+.date-selection {
+  display: flex;
+  gap: var(--spacing-xs);
+  overflow-x: auto;
+  padding-bottom: var(--spacing-xs);
+}
+
+.date-btn {
+  background: none;
+  border: 1px solid var(--border-color);
+  color: var(--text-color);
+  padding: var(--spacing-xs) var(--spacing-sm);
+  border-radius: var(--border-radius);
+  font-size: var(--font-xs);
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.date-btn.active {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  color: white;
+}
+
+.theater-item {
+  margin-bottom: var(--spacing-lg);
+}
+
+.theater-item:last-child {
+  margin-bottom: 0;
+}
+
+.theater-name {
+  font-weight: 700;
+  margin-bottom: var(--spacing-xs);
+}
+
+.theater-address {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  color: var(--text-secondary);
+  font-size: var(--font-xs);
+  margin-bottom: var(--spacing-xs);
+}
+
+.theater-distance {
+  color: var(--text-secondary);
+  font-size: var(--font-xs);
+  margin-bottom: var(--spacing-sm);
+}
+
+.showtime-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-xs);
+}
+
+.showtime-btn {
+  background: none;
+  border: 1px solid var(--border-color);
+  color: var(--text-color);
+  padding: var(--spacing-xs) var(--spacing-sm);
+  border-radius: var(--border-radius);
+  font-size: var(--font-xs);
+  cursor: pointer;
+}
+
+.showtime-btn:hover {
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+}
+
+/* ---------- Similar Movies ---------- */
+.similar-movies {
+  margin-top: var(--spacing-xl);
+}
+
+.similar-movies h2 {
+  font-size: var(--font-lg);
+  margin-bottom: var(--spacing-lg);
+}
+
+/* ---------- Responsive Design ---------- */
+@media (max-width: 992px) {
+  .details-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .movie-poster {
+    width: 200px;
+    height: 300px;
+  }
+
+  .movie-title {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .banner-content .container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .movie-poster-container {
+    margin-bottom: var(--spacing-md);
+  }
+
+  .movie-actions {
+    justify-content: center;
+  }
+
+  .details-info-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 576px) {
+  .movie-banner {
+    height: auto;
+  }
+
+  .banner-image {
+    height: 50vh;
+  }
+
+  .banner-content .container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: var(--spacing-lg);
+  }
+
+  .movie-poster {
+    width: 150px;
+    height: 225px;
+    margin-bottom: var(--spacing-md);
+  }
+
+  .movie-title {
+    font-size: 1.5rem;
+  }
+
+  .movie-actions {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--spacing-xs);
+  }
+
+  .action-btn {
+    width: 100%;
+    margin-bottom: var(--spacing-xs);
+  }
+
+  .details-info-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .trailer-placeholder {
+    height: 200px;
+  }
+}
+
