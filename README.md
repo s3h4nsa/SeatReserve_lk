@@ -4,32 +4,44 @@
 
 SeatReserve.lk is a comprehensive movie ticket booking platform designed for Sri Lankan theaters. The system allows users to browse movies, select showtimes, choose seats, and complete their ticket purchases online.
 
-## Features
+##Features
 
-- **Movie Browsing**: View currently playing and upcoming movies with details like synopsis, cast, and ratings
-- **Theater Locations**: Find theaters across Sri Lanka with amenities information
-- **Seat Selection**: Interactive seat map for selecting preferred seating
-- **Ticket Management**: Select different ticket types (Adult, Child, Senior)
-- **Secure Checkout**: Complete payment process with credit card processing
-- **User Accounts**: Create accounts to manage bookings and preferences
-- **Responsive Design**: Works on desktop, tablet, and mobile devices
+Seat Selection: Users can select seats based on availability and preference.
+
+Theater Management: Allows theater administrators to manage showtimes, available seats, and reservations.
+
+Real-Time Availability: Displays available seats in real-time, ensuring accurate information during booking.
+
+User Registration and Authentication: Provides secure registration and login functionality for users.
 
 ## Technologies Used
 
 - **Frontend**:
-  - HTML5
-  - CSS3 (with custom variables for theming)
-  - JavaScript (ES6+)
+  - HTML
+  - CSS 
+  - JavaScript 
   - Font Awesome for icons
-
-- **Design Patterns**:
-  - Mobile-first responsive design
-  - Component-based architecture
-  - Event-driven programming
 
 - **External Services**:
   - QR code generation for tickets
   - Payment gateway integration (simulated)
 
-## Project Structure
+
+##Project Structure
+
+The project is organized into several key components, each responsible for different aspects of the application:
+
+/assets: Contains images, icons, and other media files used in the platform (e.g., movie posters, theater logos, etc.).
+
+/css: Includes all the stylesheets for the application, including global styles, theme settings, and responsive layouts.
+
+/js: Includes JavaScript files for frontend logic such as seat selection, ticket booking, and payment simulations.
+
+/index.html: The homepage where users can browse movies and select theaters.
+
+/checkout.html: Page where users can review their ticket selections and proceed to payment.
+
+/movie-details.html: Provides detailed information about individual movies including synopsis, cast, and ratings.
+
+/theater-locations.html: Shows a map and list of theater locations across Sri Lanka.
 
