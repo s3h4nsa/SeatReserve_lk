@@ -136,7 +136,7 @@ document.addEventListener("DOMContentLoaded", () => {
       duration: "Not available",
       genre: "Adventure/Drama/Sci-Fi",
       releaseDate: "November 20, 2025",
-      image: "assets/image/Part Two.jpg",
+      image: "assets/poster/Part Two.jpg",
       banner: "images/banner5.jpg",
       synopsis:
         "The sequel to the 2021 film 'Dune,' continuing the adaptation of Frank Herbert's science fiction novel, focusing on Paul Atreides' journey among the Fremen and his rise against the galactic empire.",
