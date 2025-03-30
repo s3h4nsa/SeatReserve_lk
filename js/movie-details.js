@@ -54,7 +54,7 @@ document.addEventListener("DOMContentLoaded", () => {
       duration: "106 min",
       genre: "Drama",
       releaseDate: "December 14, 2023",
-      image: "assets/posters/Ape-Peincipal",
+      image: "assets/posters/Ape-Principal",
       banner: "assets/banners/Ape-Principal.jpg",
       synopsis:
         "A new female principal's efforts to combat drug abuse and corruption within a struggling village school, Mihinpura Vidyalaya, with the help of villagers and students, facing opposition from drug lords and politicians.",
