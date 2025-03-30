@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", () => {
       imdbRating: "6.8",
     },
     3: {
-      title: "Kaasi Waasi",
+      title: "Kasi Wasi",
       director: "Jayaprakash Sivagurunadan",
       cast: ["Giriraj Kaushalya", "Sarath Kothalawala", "Rodney Warnakula", "Gihan Fernando", "Priyantha Seneviratne"],
       rating: "Not Rated",
