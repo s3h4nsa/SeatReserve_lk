@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
       name: "SCOPE CINEMAS - Havelock City Mall",
       address: "Havelock City Mall 324 Havelock Road, Colombo 05",
       phone: "0112590814",
-      image: "assets/image/60ee8ca3-e8ee-448d-a5bd-ebbc768bf3b7.jpg",
+      image: "assets/theaters/60ee8ca3-e8ee-448d-a5bd-ebbc768bf3b7.jpg",
       amenities: ["IMAX", "Dolby Cinema", "Recliners", "Wheelchair Accessible"],
     },
     {
@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
       name: "SCOPE CINEMAS MULTIPLEX- CCC",
       address: "137 Sir James Pieris Mawatha, Colombo 02 ,Sri lanka",
       phone: "0112083064",
-      image: "assets/image/c615697a-fd01-48bf-b40b-4067badf0189.jpeg",
+      image: "assets/theaters/c615697a-fd01-48bf-b40b-4067badf0189.jpeg",
       amenities: ["RPX", "Recliners", "Dine-In", "Wheelchair Accessible"],
     },
     {
@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
       name: "LIBERTY CINEMAS - Colpetty",
       address: "No.35 Srimath Anagarika Dharmapala Mawatha, Colombo 03",
       phone: "0112326266",
-      image: "assets/image/17d0d2b3-02c3-4fe3-9c0d-8b16241480ae.jpg",
+      image: "assets/theaters/17d0d2b3-02c3-4fe3-9c0d-8b16241480ae.jpg",
       amenities: ["Indie Films", "Recliners", "Hearing Devices", "Doloby Cinema"],
     },
     {
@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
       name: "LIBERTY CINEMAS - Kiribathgoda",
       address: "No.94 Makola Road, Kiribathgoda",
       phone: "0112269005",
-      image: "assets/image/7f3ad000-a850-43d8-81f6-af2520b2605a.png",
+      image: "assets/theaters/7f3ad000-a850-43d8-81f6-af2520b2605a.png",
       amenities: ["IMAX", "Historic Venue", "Wheelchair Accessible"],
     },
   ]
