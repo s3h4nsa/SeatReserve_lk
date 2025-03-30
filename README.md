@@ -12,7 +12,6 @@ SeatReserve.lk is a comprehensive movie ticket booking platform designed for Sri
 - **Seat Selection**: Interactive seat map for selecting preferred seating
 - **Ticket Management**: Select different ticket types (Adult, Child, Senior)
 - **Secure Checkout**: Complete payment process with credit card processing
-- **User Accounts**: Create accounts to manage bookings and preferences
 - **Responsive Design**: Works on desktop, tablet, and mobile devices
 
 ## Technologies Used
