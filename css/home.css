@@ -313,6 +313,7 @@ nav ul li a {
   border-radius: var(--border-radius);
   overflow: hidden;
   transition: transform 0.3s ease;
+  background-color: #141414
 }
 
 .movie-card:hover {
