@@ -20,7 +20,7 @@
   --card-background: #141414;
   --text-color: #ffffff;
   --text-secondary: #b1b1b1;
-  --border-color: rgba(0, 0, 0, 0.15);
+  --border-color: rgba(0, 0, 0);
 
   /* Font sizes */
   --font-xl: 3rem;
