@@ -7,7 +7,7 @@
  */
 
 document.addEventListener("DOMContentLoaded", () => {
-  // ---------- Theater Data (In a real app, this would come from a server) ----------
+ 
   const theaters = [
     {
       id: 1,
