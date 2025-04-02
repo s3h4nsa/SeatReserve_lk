@@ -362,31 +362,28 @@
   
 @media (max-width: 768px) {
     .hero-slideshow {
-        height: 20vh; /* Reduce height further */
-        min-height: 200px; /* Set a smaller minimum height */
-        margin: 20px auto; /* Reduce margin */
-    }
-
-    .slide-content {
-        padding: var(--spacing-sm); /* Reduce padding */
-        max-width: 80%; /* Make content more compact */
-    }
-
-    .slide-content h1 {
-        font-size: var(--font-md); /* Make title smaller */
-    }
-
-    .slide-content p {
-        font-size: var(--font-xs); /* Reduce paragraph text */
-    }
-
-    .slide-buttons {
-        flex-direction: column; /* Stack buttons */
-        gap: var(--spacing-xs); /* Reduce button spacing */
+        width: 80vw;  /* Set width to 80% of the viewport width */
+        height: 80vw; /* Match height to width for a square shape */
+        min-width: 300px; /* Ensure it doesn't get too small */
+        min-height: 300px; /* Keep minimum size */
+        margin: 20px auto; /* Adjust margin */
     }
 
     .slide {
-        width: 90%; /* Make slides smaller */
-        height: 80%; /* Adjust slide height */
+        width: 100%; /* Make slides fill the container */
+        height: 100%;
+    }
+
+    .slide-content {
+        padding: var(--spacing-sm);
+        max-width: 90%;
+    }
+
+    .slide-content h1 {
+        font-size: var(--font-md);
+    }
+
+    .slide-content p {
+        font-size: var(--font-xs);
     }
 }
