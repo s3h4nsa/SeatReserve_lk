@@ -1,26 +1,21 @@
+/* fonts.css */
 
+/* Load the Cogley font */
 @font-face {
     font-family: 'Cogley';
-    src: url(assets/fonts/Cogley-TTF.ttf') format('truetype');
+    src: url('../assets/fonts/Cogley-TTF.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
-
+/* Apply Cogley font globally to the entire page */
 body {
     font-family: 'Cogley', sans-serif;
 }
 
-
-.logofont h3,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-a,
-span {
+/* Apply Cogley font to the logo */
+.logofont h3 {
     font-family: 'Cogley', sans-serif;
+    font-size: 24px; /* Adjust size as needed */
+    font-weight: normal;
 }
