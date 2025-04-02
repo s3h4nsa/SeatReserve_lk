@@ -72,38 +72,6 @@ To run this project locally, follow these steps:
 ### The application should now be running locally at http://localhost:3000.
 
 
-## Learning Resources
-
-If you're interested in building a similar website, here are some helpful tutorial links:
-
-### Movie Booking System Tutorials
-- [Complete Movie Ticket Booking Website with JavaScript](https://www.youtube.com/watch?v=oFTXFuzk2Ls)
-- [Build a Cinema Booking System from Scratch](https://www.youtube.com/watch?v=3K5A_NtHHnQ)
-- [Movie Ticket Booking App Tutorial - Full Project](https://www.youtube.com/watch?v=9Bvt6BFf6_U)
-- [Creating a Movie Website with HTML, CSS & JS](https://www.youtube.com/watch?v=P7t13SGytRk)
-
-### Seat Selection Interface
-- [Interactive Seat Selection System Tutorial](https://www.youtube.com/watch?v=vZUGFNhyKdc)
-- [JavaScript Seat Booking App Tutorial](https://www.youtube.com/watch?v=HkUzoRt-OiA)
-- [Cinema Seat Booking UI Design & Code](https://www.youtube.com/watch?v=WDwfyA4Hxlw)
-
-### Checkout & Payment Integration
-- [Multi-step Checkout Form with Validation](https://www.youtube.com/watch?v=JFfVilQSius)
-- [Payment Gateway Integration for Booking Systems](https://www.youtube.com/watch?v=7M2SzQM8Dh4)
-- [Building a Complete Checkout Process](https://www.youtube.com/watch?v=1r-F3FIONl8)
-
-
-### Dark Theme & Modern UI Design
-- [Netflix Inspired UI Design Tutorial](https://www.youtube.com/watch?v=P7t13SGytRk)
-- [Dark Theme Website Design - Complete Guide](https://www.youtube.com/watch?v=D-h8L5hgW-w)
-- [Responsive Movie Website with Modern UI](https://www.youtube.com/watch?v=9OVLaEjY-Rc)
-
-
-### UI/UX Inspiration
-- [Netflix](https://www.netflix.com) - For the dark theme color palette and card-based content display
-- [Disney+](https://www.disneyplus.com) - For their immersive banner design and smooth animations
-- [IMDb](https://www.imdb.com) - For their movie information layout and rating system
-- [Dribbble Movie Booking Concepts](https://dribbble.com/tags/movie_booking) - For various UI design elements
 
 # License
 
