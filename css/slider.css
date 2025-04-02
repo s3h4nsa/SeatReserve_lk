@@ -360,28 +360,33 @@
     filter: blur(50px);
   }
   
-  @media (max-width: 768px) {
+@media (max-width: 768px) {
     .hero-slideshow {
-        height: 30vh; /* Reduce height for mobile */
-        min-height: 300px; /* Ensure it's not too small */
-        margin: 30px auto 30px; /* Adjust margin */
+        height: 20vh; /* Reduce height further */
+        min-height: 200px; /* Set a smaller minimum height */
+        margin: 20px auto; /* Reduce margin */
     }
 
     .slide-content {
-        padding: var(--spacing-md); /* Reduce padding */
-        max-width: 90%; /* Make content fit better */
+        padding: var(--spacing-sm); /* Reduce padding */
+        max-width: 80%; /* Make content more compact */
     }
 
     .slide-content h1 {
-        font-size: var(--font-lg); /* Reduce title size */
+        font-size: var(--font-md); /* Make title smaller */
     }
 
     .slide-content p {
-        font-size: var(--font-sm); /* Reduce paragraph size */
+        font-size: var(--font-xs); /* Reduce paragraph text */
     }
 
     .slide-buttons {
-        flex-direction: column; /* Stack buttons vertically on small screens */
+        flex-direction: column; /* Stack buttons */
+        gap: var(--spacing-xs); /* Reduce button spacing */
+    }
+
+    .slide {
+        width: 90%; /* Make slides smaller */
+        height: 80%; /* Adjust slide height */
     }
 }
-  
