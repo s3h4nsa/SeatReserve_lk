@@ -54,7 +54,7 @@ document.addEventListener("DOMContentLoaded", () => {
       duration: "106 min",
       genre: "Drama",
       releaseDate: "December 14, 2023",
-      image: "assets/posters/Ape-Principal",
+      image: "assets/posters/Ape-Principal.png",
       banner: "assets/banners/Ape-Principal.jpg",
       synopsis:
         "A new female principal's efforts to combat drug abuse and corruption within a struggling village school, Mihinpura Vidyalaya, with the help of villagers and students, facing opposition from drug lords and politicians.",
@@ -100,7 +100,7 @@ document.addEventListener("DOMContentLoaded", () => {
       genre: "Adventure/Drama/Sci-Fi",
       releaseDate: "November 20, 2025",
       image: "assets/posters/Dune-Two.jpg",
-      banner: "assets/banners/dune-two-banner.jpg", 
+      banner: "assets/banners/Dune-Two.jpg",
       synopsis:
         "The sequel to the 2021 film 'Dune,' continuing the adaptation of Frank Herbert's science fiction novel, focusing on Paul Atreides' journey among the Fremen and his rise against the galactic empire.",
       trailerUrl: "https://www.youtube.com/watch?v=Way9Dexny3w",
@@ -115,10 +115,10 @@ document.addEventListener("DOMContentLoaded", () => {
       genre: "Action/Sci-Fi",
       releaseDate: "March 15, 2025",
       image: "assets/posters/godzilla_x_kong.jpg",
-      banner: "assets/banners/godzilla-x-kong-banner.jpg", // Assumed consistent format
+      banner: "assets/banners/godzilla-x-kong.jpg",
       synopsis:
         "The epic next chapter in the cinematic Monsterverse pits the almighty Kong and the fearsome Godzilla against a colossal undiscovered threat hidden within our world, challenging their very existence—and our own.",
-      trailerUrl: "https://www.youtube.com/embed/vi2055259673", // Fixed trailer URL format
+      trailerUrl: "https://www.youtube.com/embed/vi2055259673",
       imdbRating: "7.7",
     },
   }
@@ -163,7 +163,7 @@ document.addEventListener("DOMContentLoaded", () => {
       id: "4",
       title: "Oppenheimer",
       duration: "180 min",
-      image: "assets/posters/Oppenheimer.jpg", // Consistent with the path in moviesData
+      image: "assets/posters/Oppenheimer.jpg",
     },
     {
       id: "5",
