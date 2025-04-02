@@ -1,6 +1,26 @@
+
 @font-face {
     font-family: 'Cogley';
-    src: url(assets/fonts/Cogley TTF.ttf') format('truetype');
+    src: url('../assets/fonts/Cogley-TTF.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
+}
+
+
+body {
+    font-family: 'Cogley', sans-serif;
+}
+
+
+.logo h3,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+span {
+    font-family: 'Cogley', sans-serif;
 }
