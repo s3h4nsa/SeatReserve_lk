@@ -165,7 +165,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
-  // Add styles for mobile menu if they don't exist
+  // for mobile menu 
   if (!document.getElementById("movies-styles")) {
     const style = document.createElement("style")
     style.id = "movies-styles"
