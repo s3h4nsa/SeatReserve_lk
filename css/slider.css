@@ -360,4 +360,28 @@
     filter: blur(50px);
   }
   
+  @media (max-width: 768px) {
+    .hero-slideshow {
+        height: 30vh; /* Reduce height for mobile */
+        min-height: 300px; /* Ensure it's not too small */
+        margin: 30px auto 30px; /* Adjust margin */
+    }
+
+    .slide-content {
+        padding: var(--spacing-md); /* Reduce padding */
+        max-width: 90%; /* Make content fit better */
+    }
+
+    .slide-content h1 {
+        font-size: var(--font-lg); /* Reduce title size */
+    }
+
+    .slide-content p {
+        font-size: var(--font-sm); /* Reduce paragraph size */
+    }
+
+    .slide-buttons {
+        flex-direction: column; /* Stack buttons vertically on small screens */
+    }
+}
   
