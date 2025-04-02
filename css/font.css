@@ -1,9 +1,9 @@
-/* fonts.css */
+/* font.css */
 
 /* Load the Cogley font */
 @font-face {
     font-family: 'Cogley';
-    src: url('../assets/fonts/Cogley-TTF.ttf') format('truetype'); /* Adjust path */
+    src: url('../assets/fonts/Cogley-TTF.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -18,4 +18,10 @@ body {
     font-family: 'Cogley', sans-serif;
     font-size: 24px; /* Adjust size as needed */
     font-weight: normal;
+}
+
+/* Apply Cogley font to the paragraph */
+p {
+    font-family: 'Cogley', sans-serif;
+    font-size: 18px;
 }
