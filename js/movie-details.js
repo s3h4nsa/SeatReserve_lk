@@ -169,7 +169,7 @@ document.addEventListener("DOMContentLoaded", () => {
       id: "5",
       title: "Dune: Part II",
       duration: "142 min",
-      image: "assets/posters/Part Two.jpg",
+      image: "assets/posters/Dune-Two.jpg",
     },
   ]
 
