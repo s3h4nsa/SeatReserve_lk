@@ -362,28 +362,30 @@
   
 @media (max-width: 768px) {
     .hero-slideshow {
-        width: 80vw;  /* Set width to 80% of the viewport width */
-        height: 80vw; /* Match height to width for a square shape */
-        min-width: 300px; /* Ensure it doesn't get too small */
-        min-height: 300px; /* Keep minimum size */
-        margin: 20px auto; /* Adjust margin */
-    }
-
-    .slide {
-        width: 100%; /* Make slides fill the container */
-        height: 100%;
+        height: 35vh; /* Balanced height for mobile */
+        min-height: 350px; /* Prevent it from being too small */
+        margin: 30px auto; /* Adjust margin */
     }
 
     .slide-content {
-        padding: var(--spacing-sm);
-        max-width: 90%;
+        padding: var(--spacing-sm); /* Reduce padding */
+        max-width: 85%; /* Keep content centered */
     }
 
     .slide-content h1 {
-        font-size: var(--font-md);
+        font-size: var(--font-lg); /* Adjust title size */
     }
 
     .slide-content p {
-        font-size: var(--font-xs);
+        font-size: var(--font-sm); /* Keep text readable */
+    }
+
+    .slide-buttons {
+        gap: var(--spacing-sm); /* Keep button spacing comfortable */
+    }
+
+    .slide {
+        width: 85%; /* Slightly smaller slides */
+        height: 85%; /* Keep a good aspect ratio */
     }
 }
