@@ -360,32 +360,3 @@
     filter: blur(50px);
   }
   
-@media (max-width: 768px) {
-    .hero-slideshow {
-        height: 35vh; /* Balanced height for mobile */
-        min-height: 350px; /* Prevent it from being too small */
-        margin: 30px auto; /* Adjust margin */
-    }
-
-    .slide-content {
-        padding: var(--spacing-sm); /* Reduce padding */
-        max-width: 85%; /* Keep content centered */
-    }
-
-    .slide-content h1 {
-        font-size: var(--font-lg); /* Adjust title size */
-    }
-
-    .slide-content p {
-        font-size: var(--font-sm); /* Keep text readable */
-    }
-
-    .slide-buttons {
-        gap: var(--spacing-sm); /* Keep button spacing comfortable */
-    }
-
-    .slide {
-        width: 85%; /* Slightly smaller slides */
-        height: 85%; /* Keep a good aspect ratio */
-    }
-}
