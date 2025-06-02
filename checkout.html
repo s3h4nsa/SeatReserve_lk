@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en">
+   <head>
+       <meta charset="UTF-8" />
+       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+       <title>Checkout - SeatReserve.lk</title>
+       <link rel="stylesheet" href="css/checkout.css" />
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="css/fonts.css">
+   
+    </head>
+   <body>
+          
+<!-- Header Section -->
+ 
+<header>
+   <div class="container">
+       <div class="logo">
+           <h3><a href="index.html" style="text-decoration: none; color: inherit;">SeatReserve.lk</a></h3>
+       </div>
+       <nav>
+           <ul class="nav-links">
+               <li><a href="index.html">Home</a></li>
+               <li><a href="movies.html">Movies</a></li>
+               <li><a href="theaters.html">Locations</a></li>
+               <li><a href="contact.html">Contact Us</a></li>
+           </ul>
+       </nav>
+       
+       <div class="menu-toggle">
+           <span></span>
+           <span></span>
+           <span></span>
+       </div>
+   </div>
+</header>
+
+       <main>
+           <div class="container">
+               <div class="checkout-header">
+                   <h1>Checkout</h1>
+                   <p>Complete your purchase to secure your tickets</p>
+               </div>
+               
+               <!-- Checkout Progress -->
+               <div class="checkout-progress">
+                   <div class="progress-step active">
+                       <div class="step-number">1</div>
+                       <div class="step-label">Your Information</div>
+                   </div>
+                   <div class="progress-line"></div>
+                   <div class="progress-step">
+                       <div class="step-number">2</div>
+                       <div class="step-label">Payment</div>
+                   </div>
+                   <div class="progress-line"></div>
+                   <div class="progress-step">
+                       <div class="step-number">3</div>
+                       <div class="step-label">Confirmation</div>
+                   </div>
+               </div>
+               
+               <div class="checkout-grid">
+                   <div class="checkout-forms">
+                       <!-- Contact Information -->
+                       <div class="checkout-card" id="contact-info-section">
+                           <div class="card-header">
+                               <h2>Your Information</h2>
+                               <p>Please provide your contact details</p>
+                           </div>
+                           <form id="contact-form">
+                               <div class="form-row">
+                                   <div class="form-group">
+                                       <label for="first-name">First Name</label>
+                                       <input type="text" id="first-name" required aria-describedby="first-name-error">
+                                       <div class="error-message" id="first-name-error" role="alert"></div>
+                                   </div>
+                                   <div class="form-group">
+                                       <label for="last-name">Last Name</label>
+                                       <input type="text" id="last-name" required aria-describedby="last-name-error">
+                                       <div class="error-message" id="last-name-error" role="alert"></div>
+                                   </div>
+                               </div>
+                               <div class="form-group">
+                                   <label for="email">Email</label>
+                                   <input type="email" id="email" placeholder="yourname@example.com" required aria-describedby="email-error">
+                                   <div class="error-message" id="email-error" role="alert"></div>
+                               </div>
+                               <div class="form-group">
+                                   <label for="phone">Phone Number</label>
+                                   <input type="tel" id="phone" placeholder="+94771234567" required aria-describedby="phone-error">
+                                   <div class="error-message" id="phone-error" role="alert"></div>
+                               </div>
+                               <div class="form-actions">
+                                   <button type="button" id="continue-to-payment" class="btn btn-primary">Continue to Payment</button>
+                               </div>
+                           </form>
+                       </div>
+                       
+                       <!-- Payment Information (Initially Hidden) -->
+                       <div class="checkout-card hidden" id="payment-section">
+                           <div class="card-header">
+                               <h2>Payment Information</h2>
+                               <p>Enter your payment details securely</p>
+                           </div>
+                           <form id="payment-form">
+                               <div class="form-group">
+                                   <label for="card-number">Card Number</label>
+                                   <div class="card-input-wrapper">
+                                       <input type="text" id="card-number" placeholder="1234 5678 9012 3456" maxlength="19" required aria-describedby="card-number-error">
+                                       <div class="card-icons">
+                                           <i class="fa-brands fa-cc-visa" aria-hidden="true"></i>
+                                           <i class="fa-brands fa-cc-mastercard" aria-hidden="true"></i>
+                                           <i class="fa-brands fa-cc-amex" aria-hidden="true"></i>
+                                       </div>
+                                   </div>
+                                   <div class="error-message" id="card-number-error" role="alert"></div>
+                               </div>
+                               <div class="form-row">
+                                   <div class="form-group">
+                                       <label for="expiry-date">Expiry Date</label>
+                                       <input type="text" id="expiry-date" placeholder="MM/YY" maxlength="5" required>
+                                       <div class="error-message" id="expiry-date-error"></div>
+                                   </div>
+                                   <div class="form-group">
+                                       <label for="cvv">CVV (Security Code)</label>
+                                       <input type="text" id="cvv" placeholder="123" maxlength="4" required>
+                                       <div class="error-message" id="cvv-error"></div>
+                                   </div>
+                               </div>
+                               <div class="form-group">
+                                   <label for="card-name">Name on Card</label>
+                                   <input type="text" id="card-name" required>
+                                   <div class="error-message" id="card-name-error"></div>
+                               </div>
+                               <div class="form-actions">
+                                   <button type="button" id="back-to-contact" class="btn btn-secondary">Back</button>
+                                   <button type="button" id="complete-purchase" class="btn btn-primary">Complete Purchase</button>
+                               </div>
+                           </form>
+                       </div>
+                       
+                       <!-- Confirmation Section (Initially Hidden) -->
+                       <div class="checkout-card hidden" id="confirmation-section">
+                           <div class="card-header">
+                               <div class="confirmation-icon">
+                                   <i class="fa-solid fa-circle-check"></i>
+                               </div>
+                               <h2>Purchase Confirmed!</h2>
+                               <p>Your tickets have been reserved successfully</p>
+                           </div>
+                           <div class="confirmation-details">
+                               <p>A confirmation email has been sent to <span id="confirmation-email"></span></p>
+                               <p>Booking Reference: <span id="booking-reference">SR-12345678</span></p>
+                               <div class="qr-code">
+                                   <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=SR-12345678" alt="QR Code">
+                               </div>
+                               <p class="qr-info">Show this QR code at the theater to collect your tickets</p>
+                               <div class="form-actions">
+                                   <a href="index.html" class="btn btn-primary">Return to Home</a>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+                   
+                   <div class="order-summary-container">
+                       <div class="checkout-card order-summary">
+                           <div class="card-header">
+                               <h2>Order Summary</h2>
+                           </div>
+                           <div class="card-content">
+                               <div class="movie-summary">
+                                   <div class="movie-poster">
+                                       <img id="movie-poster-img" src="/placeholder.svg?height=120&width=80" alt="Movie Poster">
+                                   </div>
+                                   <div class="movie-info">
+                                       <h3 id="movie-title">Avengers: Endgame</h3>
+                                       <div class="movie-details">
+                                           <div class="detail-item">
+                                               <i class="fa-solid fa-calendar"></i>
+                                               <span id="movie-date">June 15, 2025 - 7:30 PM</span>
+                                           </div>
+                                           <div class="detail-item">
+                                               <i class="fa-solid fa-location-dot"></i>
+                                               <span id="movie-theater">Colombo City Cinema</span>
+                                           </div>
+                                           <div class="detail-item">
+                                               <i class="fa-solid fa-ticket"></i>
+                                               <span id="selected-seats">Selected Seats: A1, A2, A3</span>
+                                           </div>
+                                       </div>
+                                   </div>
+                               </div>
+                               <div class="separator"></div>
+                               <div class="ticket-details">
+                               </div>
+                               <div class="separator"></div>
+                               <div class="summary-item total">
+                                   <span>Total</span>
+                                   <span id="total">Rs. 1,700.00</span>
+                               </div>
+                               <div class="promo-code">
+                                   <input type="text" id="promo-input" placeholder="Enter promo code" aria-label="Promo code">
+                                   <button id="apply-promo" class="btn btn-secondary">Apply</button>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </main>
+
+       <!-- Footer section -->
+       <footer>
+           <div class="container">
+               <div class="footer-content">
+                   <div class="copyright">
+                       <p>&copy; 2025 SeatReserve.lk. All rights reserved.</p>
+                   </div>
+                   <div class="footer-links">
+                       <a href="terms.html">Terms of Service</a>
+                       <a href="privacy.html">Privacy Policy</a>
+                       <a href="contact.html">Contact Us</a>
+                   </div>
+               </div>
+           </div>
+       </footer>
+
+       
+       <script src="js/data/site-data.js"></script>
+       <script src="js/main.js"></script>
+       <script src="js/checkout.js"></script>
+   </body>
+</html>
+
