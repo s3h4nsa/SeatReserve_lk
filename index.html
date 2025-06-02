@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>SeatReserve.lk</title>
+   <!-- Link to CSS file -->
+   <link rel="stylesheet" href="css/home.css">
+   <!-- Link to Font Awesome for icons -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+   <!-- Link to slider -->
+    <link rel="stylesheet" href="css/slider.css">
+   
+</head>
+<body>
+   <!-- Header Section -->
+<header>
+   <div class="container">
+       <div class="logo">
+           <h3><a href="index.html" style="text-decoration: none; color: inherit;">SeatReserve.lk</a></h3>
+       </div>
+       <nav>
+           <ul class="nav-links">
+               <li><a href="index.html" class="active">Home</a></li>
+               <li><a href="movies.html">Movies</a></li>
+               <li><a href="theaters.html">Locations</a></li>
+               <li><a href="contact.html">Contact Us</a></li>
+           </ul>
+       </nav>
+       
+       <div class="menu-toggle" aria-expanded="false" aria-label="Toggle navigation menu">
+           <span></span>
+           <span></span>
+           <span></span>
+       </div>
+   </div>
+</header>
+
+
+   <!-- Main content -->
+   <main>
+   
+   <!-- Hero Slideshow Section -->
+<section class="hero-slideshow" role="region" aria-label="Featured movies slideshow">
+    <div class="slides-container">
+        <!-- Slide 1 -->
+        <div class="slide active" style="background-image: url('assets/banners/Rani-banner.jpg');" aria-label="Rani movie banner" aria-hidden="false">
+            <div class="slide-content">
+                <h1>Rani</h1>
+                <p>Rani portrays Dr.Manorani Saravanamuttu's fight for justice after her son's 1990 murder, directed by Asoka Handagama.</p>
+                <div class="slide-buttons">
+                    <a href="movie-details.html?id=1" class="btn btn-primary">
+                        <i class="fa-solid fa-ticket"></i> Book Now
+                    </a>
+                </div>
+            </div>
+            <div class="hero-overlay"></div>
+        </div>
+        
+        <!-- Slide 2 -->
+        <div class="slide" style="background-image: url('assets/banners/Ape-Principal.jpg');" aria-label="Ape Principal movie banner" aria-hidden="true">
+            <div class="slide-content">
+                <h1>Ape Principal</h1>
+                <p>A new female principal's efforts to combat drug abuse and corruption within a struggling village school.</p>
+                <div class="slide-buttons">
+                    <a href="movie-details.html?id=2" class="btn btn-primary">
+                        <i class="fa-solid fa-ticket"></i> Book Now
+                    </a>
+                </div>
+            </div>
+            <div class="hero-overlay"></div>
+        </div>
+        
+        <!-- Slide 3 -->
+        <div class="slide" style="background-image: url('assets/banners/oppenheimer-banner.jpg');" aria-label="Oppenheimer movie banner" aria-hidden="true">
+            <div class="slide-content">
+                <h1>Oppenheimer</h1>
+                <p>The story of American scientist J. Robert Oppenheimer and his role in the development of the atomic bomb.</p>
+                <div class="slide-buttons">
+                    <a href="movie-details.html?id=4" class="btn btn-primary">
+                        <i class="fa-solid fa-ticket"></i> Book Now
+                    </a>
+                </div>
+            </div>
+            <div class="hero-overlay"></div>
+        </div>
+        
+        <!-- Slide 4 -->
+        <div class="slide" style="background-image: url('assets/banners/Kasi-Wasi.jpg');" aria-label="Kasi Wasi movie banner" aria-hidden="true">
+            <div class="slide-content">
+                <h1>Kasi Wasi</h1>
+                <p>Mr. Amarabandu is a funeral director who manages his business with the help of three assistants.</p>
+                <div class="slide-buttons">
+                    <a href="movie-details.html?id=3" class="btn btn-primary">
+                        <i class="fa-solid fa-ticket"></i> Book Now
+                    </a>
+                </div>
+            </div>
+            <div class="hero-overlay"></div>
+        </div>
+    </div>
+    
+    <!-- Slideshow Navigation -->
+    <div class="slide-nav">
+        <button class="slide-prev">
+            <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <div class="slide-indicators">
+            <span class="indicator active"></span>
+            <span class="indicator"></span>
+            <span class="indicator"></span>
+            <span class="indicator"></span>
+        </div>
+        <button class="slide-next">
+            <i class="fa-solid fa-chevron-right"></i>
+        </button>
+    </div>
+</section>
+</main>
+
+
+
+
+
+
+</main>
+
+
+
+
+
+
+
+
+
+
+
+
+   <section class="hero">
+           <div class="container">
+               <div class="hero-content">
+                   <h1>Book Your Movie Tickets</h1>
+                   <p>Find and book tickets for the latest blockbusters, indie gems, and classic films. Your perfect movie night is just a click away.</p>
+                   
+               
+               </div>
+           </div>
+       </section>
+
+       <!-- Now Playing section -->
+       <section class="now-playing">
+           <div class="container">
+               <div class="section-header">
+                   <h2>Now Playing</h2>
+                   <p>Catch the latest blockbusters and indie gems in theaters now.</p>
+               </div>
+               
+               <div class="movie-grid">
+                  
+                   <!-- Movie Card 1 -->
+                   <div class="movie-card">
+                           <div class="movie-poster">
+                               <img src="assets/posters/Rani.jpg" alt="Rani movie poster">
+                               <div class="rating">
+                                   <i class="fa-solid fa-star"></i>
+                                   <span>7.9/10</span>
+                               </div>
+                           </div>
+                           <div class="movie-info">
+                               <h3>Rani</h3>
+                               <div class="movie-meta">
+                                   <span class="movie-rating">G</span>
+                                   <span class="movie-genre">Drama</span>
+                               </div>
+                               <div class="movie-duration">
+                                   <i class="fa-regular fa-clock"></i>
+                                   <span>2h 3m</span>
+                               </div>
+                               <a href="movie-details.html?id=1" class="book-btn">
+                                   <i class="fa-solid fa-ticket"></i>
+                                   Book Tickets
+                               </a>
+                           </div>
+                       </div>
+                  
+
+                   <!-- Movie Card 2 -->
+                   <div class="movie-card">
+                       <div class="movie-poster">
+                           <img src="assets/posters/Ape-Principal.png" alt="Ape Principal movie poster">
+                           <span class="badge">Fan Favorite</span>
+                           <div class="rating">
+                               <i class="fa-solid fa-star"></i>
+                               <span>6.9/10</span>
+                           </div>
+                       </div>
+                       <div class="movie-info">
+                           <h3>Ape Principal</h3>
+                           <div class="movie-meta">
+                               <span class="movie-rating">G</span>
+                               <span class="movie-genre">Drama</span>
+                           </div>
+                           <div class="movie-duration">
+                               <i class="fa-regular fa-clock"></i>
+                               <span>1h 46m</span>
+                           </div>
+                           <a href="movie-details.html?id=2" class="book-btn">
+                               <i class="fa-solid fa-ticket"></i>
+                               Book Tickets
+                           </a>
+                       </div>
+                   </div>
+
+                   <!-- Movie Card 3 -->
+                   <div class="movie-card">
+                       <div class="movie-poster">
+                           <img src="assets/posters/Kasi-wasi.jpg" alt="Kasi Wasi movie poster">
+                           <span class="badge">Must See</span>
+                           <div class="rating">
+                               <i class="fa-solid fa-star"></i>
+                               <span>7.9/10</span>
+                           </div>
+                       </div>
+                       <div class="movie-info">
+                           <h3>Kasi Wasi</h3>
+                           <div class="movie-meta">
+                               <span class="movie-rating">G</span>
+                               <span class="movie-genre">Comedy</span>
+                           </div>
+                           <div class="movie-duration">
+                               <i class="fa-regular fa-clock"></i>
+                               <span>2h 56m</span>
+                           </div>
+                           <a href="movie-details.html?id=3" class="book-btn">
+                               <i class="fa-solid fa-ticket"></i>
+                               Book Tickets
+                           </a>
+                       </div>
+                   </div>
+
+                   <!-- Movie Card 4 -->
+                   <div class="movie-card">
+                       <div class="movie-poster">
+                           <img src="assets/posters/Oppenheimer.jpg" alt="Oppenheimer movie poster">
+                           
+                           <div class="rating">
+                               <i class="fa-solid fa-star"></i>
+                               <span>7.0/10</span>
+                           </div>
+                       </div>
+                       <div class="movie-info">
+                           <h3>Oppenheimer</h3>
+                           <div class="movie-meta">
+                               <span class="movie-rating">G</span>
+                               <span class="movie-genre">Comedy</span>
+                           </div>
+                           <div class="movie-duration">
+                               <i class="fa-regular fa-clock"></i>
+                               <span>1h 55m</span>
+                           </div>
+                           <a href="movie-details.html?id=4" class="book-btn">
+                               <i class="fa-solid fa-ticket"></i>
+                               Book Tickets
+                           </a>
+                       </div>
+                   </div>
+               </div>
+               
+               <div class="view-all">
+                   <a href="movies.html" class="view-all-btn">View All Movies</a>
+               </div>
+           </div>
+       </section>
+
+       <!-- Coming Soon section -->
+       <section class="coming-soon">
+           <div class="container">
+               <div class="section-header">
+                   <h2>Coming Soon</h2>
+                   <p>Get excited for these upcoming releases and pre-book your tickets.</p>
+               </div>
+               
+               <div class="movie-grid">
+                   <!-- Coming Soon Movie 1 -->
+                   <div class="movie-card">
+                       <div class="movie-poster">
+                           <img src="assets/posters/Gladiator-II.jpg" alt="Gladiator II movie poster">
+                           
+                       </div>
+                       <div class="movie-info">
+                           <h3>Gladiator II</h3>
+                           <div class="release-date">
+                               <i class="fa-solid fa-calendar"></i>
+                               <span>November 22, 2025</span>
+                           </div>
+                           <button class="notify-btn">Notify Me</button>
+                       </div>
+                   </div>
+
+                   <!-- Coming Soon Movie 2 -->
+                   <div class="movie-card">
+                       <div class="movie-poster">
+                           <img src="assets/posters/avatar.png" alt="Avatar 3 movie poster">
+                           
+                       </div>
+                       <div class="movie-info">
+                           <h3>Avatar 3</h3>
+                           <div class="release-date">
+                               <i class="fa-solid fa-calendar"></i>
+                               <span>December 19, 2025</span>
+                           </div>
+                           <button class="notify-btn">Notify Me</button>
+                       </div>
+                   </div>
+
+                   <!-- Coming Soon Movie 3 -->
+                   <div class="movie-card">
+                       <div class="movie-poster">
+                           <img src="assets/posters/mission-impossible.jpg" alt="Mission Impossible 8 movie poster">
+                           
+                       </div>
+                       <div class="movie-info">
+                           <h3>M.I 8</h3>
+                           <div class="release-date">
+                               <i class="fa-solid fa-calendar"></i>
+                               <span>May 23, 2025</span>
+                           </div>
+                           <button class="notify-btn">Notify Me</button>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </section>
+
+       <!-- Why Choose Us section -->
+       <section class="why-choose-us">
+           <div class="container">
+               <div class="features-grid">
+                   <div class="features-content">
+                       <h2>Why Choose SeatReserve.lk?</h2>
+                       <p>We're committed to providing the best movie ticket buying experience with secure transactions and exceptional customer service.</p>
+                       
+                       <div class="features">
+                           <div class="feature">
+                               <i class="fa-solid fa-shield"></i>
+                               <div>
+                                   <h3>Secure Transactions</h3>
+                                   <p>All payments are encrypted and protected.</p>
+                               </div>
+                           </div>
+                           <div class="feature">
+                               <i class="fa-solid fa-credit-card"></i>
+                               <div>
+                                   <h3>Easy Refunds</h3>
+                                   <p>Hassle-free refund policy for canceled showings.</p>
+                               </div>
+                           </div>
+                           <div class="feature">
+                               <i class="fa-solid fa-ticket"></i>
+                               <div>
+                                   <h3>Seat Selection</h3>
+                                   <p>Choose your perfect seat with our interactive seating chart.</p>
+                               </div>
+                           </div>
+                           <div class="feature">
+                               <i class="fa-solid fa-popcorn"></i>
+                               <div>
+                                   <h3>Concession Pre-orders</h3>
+                                   <p>Skip the line by pre-ordering your snacks.</p>
+                               </div>
+                           </div>
+                       </div>
+                   </div>      
+               </div>
+           </div>
+       </section>
+
+       <!-- Newsletter section -->
+       <section class="newsletter">
+           <div class="container">
+               <div class="newsletter-content">
+                   <h2>Join Our Movie Club</h2>
+                   <p>Get exclusive discounts, early access to tickets, and special promotions.</p>
+                   
+                   <form id="newsletter-form">
+                       <div class="form-group">
+                           <input type="email" id="email" placeholder="Enter your email" required>
+                           <button type="submit">Subscribe</button>
+                       </div>
+                       <p class="form-disclaimer">By subscribing, you agree to our Terms of Service and Privacy Policy.</p>
+                   </form>
+               </div>
+           </div>
+       </section>
+   </main>
+
+   <!-- Footer section -->
+       <footer>
+           <div class="container">
+               <div class="footer-content">
+                   <div class="copyright">
+                       <p>&copy; 2025 SeatReserve.lk. All rights reserved.</p>
+                   </div>
+                   <div class="footer-links">
+                       <a href="terms.html">Terms of Service</a>
+                       <a href="privacy.html">Privacy Policy</a>
+                       <a href="contact.html">Contact Us</a>
+                   </div>
+               </div>
+           </div>
+       </footer>
+
+   <!-- Add the data module before other scripts -->
+  <script src="js/data/site-data.js"></script>
+  
+  <!-- Link to JavaScript file -->
+  <script src="js/main.js"></script>
+  <script src="js/home.js"></script>
+  <!-- Link to slider file -->
+  <script src="js/slider.js"></script>
+</body>
+</html>
+
