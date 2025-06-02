@@ -1,0 +1,127 @@
+/* 
+* CSS file for the SeatReserve.lk legal pages (Terms of Service and Privacy Policy)
+*/
+
+/* ---------- Import Global Styles ---------- */
+@import url("home.css");
+
+/* ---------- Legal Hero Section ---------- */
+.legal-hero {
+  background: linear-gradient(to bottom, #000, #111);
+  padding: var(--spacing-xl) 0;
+  text-align: center;
+}
+
+.legal-hero-content h1 {
+  font-size: var(--font-xl);
+  margin-bottom: var(--spacing-sm);
+}
+
+.legal-hero-content p {
+  color: var(--text-secondary);
+}
+
+.legal-content {
+  padding: var(--spacing-xl) 0;
+}
+
+.legal-container {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: var(--spacing-xl);
+}
+
+.legal-sidebar {
+  position: sticky;
+  top: 90px;
+  align-self: start;
+  background-color: var(--card-background);
+  border-radius: var(--border-radius);
+  padding: var(--spacing-md);
+}
+
+.legal-sidebar h3 {
+  margin-bottom: var(--spacing-md);
+  font-size: var(--font-md);
+}
+
+.legal-sidebar ul {
+  list-style: none;
+}
+
+.legal-sidebar li {
+  margin-bottom: var(--spacing-xs);
+}
+
+.legal-sidebar a {
+  color: var(--text-secondary);
+  font-size: var(--font-sm);
+  transition: color 0.3s ease;
+}
+
+.legal-sidebar a:hover {
+  color: var(--primary-color);
+}
+
+/* ---------- Legal Text Formatting ---------- */
+.legal-text {
+  background-color: var(--card-background);
+  border-radius: var(--border-radius);
+  padding: var(--spacing-lg);
+}
+
+.legal-text section {
+  margin-bottom: var(--spacing-xl);
+}
+
+.legal-text section:last-child {
+  margin-bottom: 0;
+}
+
+.legal-text h2 {
+  font-size: var(--font-lg);
+  margin-bottom: var(--spacing-md);
+  color: var(--primary-color);
+}
+
+.legal-text p {
+  margin-bottom: var(--spacing-md);
+  line-height: 1.7;
+}
+
+.legal-text ul,
+.legal-text ol {
+  margin-bottom: var(--spacing-md);
+  padding-left: var(--spacing-lg);
+}
+
+.legal-text li {
+  margin-bottom: var(--spacing-xs);
+}
+
+.legal-text a {
+  color: var(--primary-color);
+}
+
+.legal-text a:hover {
+  text-decoration: underline;
+}
+
+/* ---------- Responsive Design ---------- */
+@media (max-width: 992px) {
+  .legal-container {
+    grid-template-columns: 1fr;
+  }
+
+  .legal-sidebar {
+    position: static;
+    margin-bottom: var(--spacing-lg);
+  }
+}
+
+@media (max-width: 768px) {
+  .legal-text h2 {
+    font-size: var(--font-md);
+  }
+}
+
