@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Movie Details - SeatReserve.lk</title>
+   
+   <!-- SEO Optimization -->
+   <meta name="description" content="Check out movie details, showtimes, and trailers at SeatReserve.lk. Book your favorite movie tickets now!">
+
+   <!-- Link to CSS file -->
+   <link rel="stylesheet" href="css/movie-details.css">
+
+   <!-- Link to Font Awesome for icons -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+   <!-- Header Section -->
+   <header>
+       <div class="container">
+           <div class="logo">
+               <h3><a href="index.html" style="text-decoration: none; color: inherit;">SeatReserve.lk</a></h3>
+           </div>
+           <nav>
+               <ul class="nav-links">
+                   <li><a href="index.html">Home</a></li>
+                   <li><a href="movies.html" class="active">Movies</a></li>
+                   <li><a href="theaters.html">Locations</a></li>
+                   <li><a href="contact.html">Contact Us</a></li>
+               </ul>
+           </nav>
+           <div class="menu-toggle">
+               <span></span>
+               <span></span>
+               <span></span>
+           </div>
+       </div>
+   </header>
+
+   <!-- Main content -->
+   <main>
+       <!-- Movie Banner section -->
+       <section class="movie-banner" id="movie-banner">
+           <!-- Banner content will be dynamically inserted by JavaScript -->
+       </section>
+
+       <!-- Movie Details section -->
+       <section class="movie-details">
+           <div class="container">
+               <div class="details-grid">
+                   <div class="details-main">
+                       <!-- Synopsis -->
+                       <div class="details-section">
+                           <h2>Synopsis</h2>
+                           <p id="movie-synopsis"></p>
+                       </div>
+                       
+                       <div class="separator"></div>
+                       
+                       <!-- Details -->
+                       <div class="details-section">
+                           <h2>Details</h2>
+                           <div class="details-info-grid">
+                               <div class="details-info">
+                                   <h3>Director</h3>
+                                   <p id="movie-director"></p>
+                               </div>
+                               <div class="details-info">
+                                   <h3>Release Date</h3>
+                                   <p id="movie-release"></p>
+                               </div>
+                               <div class="details-info">
+                                   <h3>Cast</h3>
+                                   <p id="movie-cast"></p>
+                               </div>
+                               <div class="details-info">
+                                   <h3>Genre</h3>
+                                   <p id="movie-genre"></p>
+                               </div>
+                           </div>
+                       </div>
+                       
+                       <div class="separator"></div>
+                       
+                       <!-- Trailer -->
+                       <div class="details-section">
+                           <h2>Trailer</h2>
+                           <div class="trailer-container">
+                               <div class="trailer-placeholder">
+                                   <button class="play-trailer-btn">
+                                       <i class="fa-solid fa-play"></i>
+                                   </button>
+                                   <img id="trailer-thumbnail" src="images/trailer-placeholder.jpg" alt="Trailer thumbnail">
+                               </div>
+                               <div id="trailer-video" class="hidden">
+                                   <!-- YouTube video will load here -->
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+                   
+                   <!-- Showtimes -->
+                   <div class="details-sidebar">
+                       <div class="showtimes-card">
+                           <h2>Showtimes</h2>
+                           
+                           <!-- Date selection -->
+                           <div class="date-selection">
+                               <button class="date-btn active">Today</button>
+                               <button class="date-btn">Tomorrow</button>
+                               <button class="date-btn">Wed</button>
+                               <button class="date-btn">Thu</button>
+                               <button class="date-btn">Fri</button>
+                               <button class="date-btn">Sat</button>
+                               <button class="date-btn">Sun</button>
+                           </div>
+                           
+                           <div class="separator"></div>
+                           
+                           <!-- Theater list -->
+                           <div class="theater-list" id="theater-list">
+                               <!-- Theater items will be dynamically inserted by JavaScript -->
+                           </div>
+                       </div>
+                   </div>
+               </div>
+               
+               <!-- Similar Movies section -->
+               <div class="similar-movies">
+                   <h2>You May Also Like</h2>
+                   <div class="movie-grid">
+                       <!-- Similar movie cards will be dynamically inserted by JavaScript -->
+                   </div>
+               </div>
+           </div>
+       </section>
+   </main>
+
+   <!-- Footer section -->
+   <footer>
+       <div class="container">
+           <div class="footer-content">
+               <div class="copyright">
+                   <p>&copy; 2025 SeatReserve.lk. All rights reserved.</p>
+               </div>
+               <div class="footer-links">
+                   <a href="terms.html">Terms of Service</a>
+                   <a href="privacy.html">Privacy Policy</a>
+                   <a href="contact.html">Contact Us</a>
+               </div>
+           </div>
+       </div>
+   </footer>
+
+   <!-- Add the data module before other scripts -->
+   <script src="js/data/site-data.js"></script>
+  
+   <!-- Link to shared JavaScript utilities -->
+   <script src="js/main.js"></script>
+  
+   <!-- Link to page-specific JavaScript file -->
+   <script src="js/movie-details.js"></script>
+</body>
+</html>
+
