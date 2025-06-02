@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en">
+   <head>
+       <meta charset="UTF-8" />
+       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+       <title>Contact Us - SeatReserve.lk</title>
+       <!-- Link to CSS file -->
+       <link rel="stylesheet" href="css/contact.css" />
+       <!-- Link to Font Awesome for icons -->
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+   </head>
+   <body>
+       <!-- Header Section -->
+       <header>
+           <div class="container">
+               <div class="logo">
+                   <h3><a href="index.html" style="text-decoration: none; color: inherit">SeatReserve.lk</a></h3>
+               </div>
+               <nav>
+                   <ul class="nav-links">
+                       <li><a href="index.html">Home</a></li>
+                       <li><a href="movies.html">Movies</a></li>
+                       <li><a href="theaters.html">Locations</a></li>
+                       <li><a href="contact.html" class="active">Contact Us</a></li>
+                   </ul>
+               </nav>
+               
+               <div class="menu-toggle">
+                   <span></span>
+                   <span></span>
+                   <span></span>
+               </div>
+           </div>
+       </header>
+
+       <!-- Main content -->
+       <main>
+           <!-- Contact Hero section -->
+           <section class="contact-hero">
+               <div class="container">
+                   <div class="contact-hero-content">
+                       <h1>Contact Us</h1>
+                       <p>We're here to help with any questions or concerns you may have</p>
+                   </div>
+               </div>
+           </section>
+
+           <!-- Contact Information section -->
+           <section class="contact-info">
+               <div class="container">
+                   <div class="info-grid">
+                       <div class="info-card">
+                           <div class="info-icon">
+                               <i class="fa-solid fa-phone"></i>
+                           </div>
+                           <h3>Phone Support</h3>
+                           <p>Call us for immediate assistance</p>
+                           <a href="tel:0712345678" class="info-link">0712345678</a>
+                           <p class="info-hours">Available 7 days a week, 9am - 9pm</p>
+                       </div>
+
+                       <div class="info-card">
+                           <div class="info-icon">
+                               <i class="fa-solid fa-envelope"></i>
+                           </div>
+                           <h3>Email Support</h3>
+                           <p>Send us an email anytime</p>
+                           <a href="mailto:support@seatreserve.lk" class="info-link">support@seatreserve.lk</a>
+                           <p class="info-hours">We'll respond within 24 hours</p>
+                       </div>
+
+                       <div class="info-card">
+                           <div class="info-icon">
+                               <i class="fa-solid fa-comment"></i>
+                           </div>
+                           <h3>Live Chat</h3>
+                           <p>Chat with our support team</p>
+                           <button class="chat-btn">Start Chat</button>
+                           <p class="info-hours">Available 7 days a week, 9am - 9pm</p>
+                       </div>
+                   </div>
+               </div>
+           </section>
+
+           <!-- Contact Form section -->
+           <section class="contact-form-section">
+               <div class="container">
+                   <div class="form-container">
+                       <div class="form-header">
+                           <h2>Send Us a Message</h2>
+                           <p>Fill out the form below and we'll get back to you as soon as possible</p>
+                       </div>
+
+                       <form id="contact-form" class="contact-form">
+                           <div class="form-row">
+                               <div class="form-group">
+                                   <label for="name">Full Name</label>
+                                   <input type="text" id="name" required aria-describedby="name-error" />
+                                   <div class="error-message" id="name-error" role="alert"></div>
+                               </div>
+                               <div class="form-group">
+                                   <label for="email">Email</label>
+                                   <input type="email" id="email" placeholder="your email@example.com" required aria-describedby="email-error" />
+                                   <div class="error-message" id="email-error" role="alert"></div>
+                               </div>
+                           </div>
+
+                           <div class="form-row">
+                               <div class="form-group">
+                                   <label for="phone">Phone Number</label>
+                                   <input type="tel" id="phone" placeholder="+94771234567" aria-describedby="phone-error" />
+                                   <div class="error-message" id="phone-error" role="alert"></div>
+                               </div>
+                               <div class="form-group">
+                                   <label for="subject">Subject</label>
+                                   <select id="subject" required aria-describedby="subject-error">
+                                       <option value="" disabled selected>Select a subject</option>
+                                       <option value="ticket-issue">Ticket Issue</option>
+                                       <option value="refund">Refund Request</option>
+                                       <option value="account">Account Help</option>
+                                       <option value="feedback">Feedback</option>
+                                       <option value="other">Other</option>
+                                   </select>
+                                   <div class="error-message" id="subject-error" role="alert"></div>
+                               </div>
+                           </div>
+
+                           <div class="form-group">
+                               <label for="message">Message</label>
+                               <textarea id="message" rows="6" placeholder="How can we help you?" required aria-describedby="message-error"></textarea>
+                               <div class="error-message" id="message-error" role="alert"></div>
+                           </div>
+
+                           <div class="form-group">
+                               <button type="submit" class="submit-btn">Send Message</button>
+                               <div id="form-submission-status" class="form-message" role="status" aria-live="polite"></div>
+                           </div>
+                       </form>
+                   </div>
+               </div>
+           </section>
+
+           <!-- FAQ section -->
+           <section class="faq-section">
+               <div class="container">
+                   <div class="section-header">
+                       <h2>Frequently Asked Questions</h2>
+                       <p>Find quick answers to common questions</p>
+                   </div>
+
+                   <div class="faq-container">
+                       <div class="faq-item">
+                           <div class="faq-question">
+                               <h3>How do I get a refund for my tickets?</h3>
+                               <i class="fa-solid fa-chevron-down"></i>
+                           </div>
+                           <div class="faq-answer">
+                               <p>
+                                   Refunds are available for tickets purchased online up to 2 hours before the
+                                   showtime. To request a refund, log into your account, go to your order history, and
+                                   select the "Request Refund" option next to the applicable order. If you purchased
+                                   tickets at the theater, please visit the box office with your ticket stub and
+                                   receipt.
+                               </p>
+                           </div>
+                       </div>
+
+                       <div class="faq-item">
+                           <div class="faq-question">
+                               <h3>Can I change my seats after purchasing tickets?</h3>
+                               <i class="fa-solid fa-chevron-down"></i>
+                           </div>
+                           <div class="faq-answer">
+                               <p>
+                                   Yes, you can change your seats up to 1 hour before the showtime, subject to
+                                   availability. Log into your account, go to your order history, and select "Change
+                                   Seats" next to the applicable order. If your preferred seats are not available, you
+                                   can request a refund and make a new purchase.
+                               </p>
+                           </div>
+                       </div>
+
+                       <div class="faq-item">
+                           <div class="faq-question">
+                               <h3>How do I redeem a promotional code?</h3>
+                               <i class="fa-solid fa-chevron-down"></i>
+                           </div>
+                           <div class="faq-answer">
+                               <p>
+                                   To redeem a promotional code, select your movie, showtime, and seats as usual. On
+                                   the checkout page, you'll see a field labeled "Promotional Code" where you can enter
+                                   your code. Click "Apply" to see the discount reflected in your order total before
+                                   completing your purchase.
+                               </p>
+                           </div>
+                       </div>
+
+                       <div class="faq-item">
+                           <div class="faq-question">
+                               <h3>What is your policy on outside food and drinks?</h3>
+                               <i class="fa-solid fa-chevron-down"></i>
+                           </div>
+                           <div class="faq-answer">
+                               <p>
+                                   Outside food and drinks are generally not permitted in our theaters. We offer a
+                                   variety of concessions including popcorn, candy, soft drinks, and at select
+                                   locations, alcoholic beverages and expanded food menus. If you have dietary
+                                   restrictions or medical needs, please contact the theater directly for
+                                   accommodations.
+                               </p>
+                           </div>
+                       </div>
+
+                       <div class="faq-item">
+                           <div class="faq-question">
+                               <h3>How can I join the SeatReserve.lk rewards program?</h3>
+                               <i class="fa-solid fa-chevron-down"></i>
+                           </div>
+                           <div class="faq-answer">
+                               <p>
+                                   Joining our rewards program is easy and free! Simply create an account on our
+                                   website or mobile app, and opt-in to the rewards program during registration. You'll
+                                   start earning points immediately on ticket and concession purchases, which can be
+                                   redeemed for free tickets, concession items, and exclusive perks.
+                               </p>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </section>
+       </main>
+
+       <!-- Footer section -->
+       <footer>
+           <div class="container">
+               <div class="footer-content">
+                   <div class="copyright">
+                       <p>&copy; 2025 SeatReserve.lk. All rights reserved.</p>
+                   </div>
+                   <div class="footer-links">
+                       <a href="terms.html">Terms of Service</a>
+                       <a href="privacy.html">Privacy Policy</a>
+                       <a href="contact.html">Contact Us</a>
+                   </div>
+               </div>
+           </div>
+       </footer>
+
+       <!-- Link to shared JavaScript utilities -->
+       <script src="js/main.js"></script>
+  
+       <!-- Link to page-specific JavaScript file -->
+       <script src="js/contact.js"></script>
+   </body>
+</html>
+
