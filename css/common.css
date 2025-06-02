@@ -1,0 +1,569 @@
+/* 
+* Common CSS file for the SeatReserve.lk website
+*/
+
+/* ---------- Global Variables ---------- */
+:root {
+  /* Main color palette */
+  --primary-color: #e50914;
+  --secondary-color: #ffffff;
+  --background-color: #000000;
+  --card-background: #141414;
+  --text-color: #ffffff;
+  --text-secondary: #d1d1d1;
+  --border-color: rgba(255, 255, 255, 0.15);
+  --error-color: #ff3b30;
+  --success-color: #34c759;
+
+  /* Font sizes */
+  --font-xl: 3rem;
+  --font-lg: 2rem;
+  --font-md: 1.5rem;
+  --font-sm: 1rem;
+  --font-xs: 0.875rem;
+
+  /* Spacing */
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 1.5rem;
+  --spacing-lg: 2rem;
+  --spacing-xl: 3rem;
+
+  /* Border radius */
+  --border-radius: 1rem;
+}
+
+/* ---------- Reset & Base Styles ---------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-md);
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-color);
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--primary-color);
+}
+
+a:focus-visible {
+  outline: 2px solid var(--primary-color);
+  outline-offset: 2px;
+}
+
+button,
+.btn {
+  cursor: pointer;
+  border: none;
+  border-radius: var(--border-radius);
+  padding: var(--spacing-sm) var(--spacing-md);
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+button:focus-visible,
+.btn:focus-visible {
+  outline: 2px solid var(--primary-color);
+  outline-offset: 2px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ---------- Header Styles ---------- */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--border-color);
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  font-size: var(--font-md);
+  font-weight: 700;
+}
+
+.logo i {
+  color: var(--primary-color);
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: var(--spacing-lg);
+}
+
+nav ul li a {
+  font-size: var(--font-sm);
+  font-weight: 500;
+}
+
+.auth-buttons {
+  display: flex;
+  gap: var(--spacing-sm);
+}
+
+.login-btn {
+  font-weight: 500;
+}
+
+.signup-btn {
+  background-color: var(--primary-color);
+  color: white;
+  padding: var(--spacing-xs) var(--spacing-md);
+  border-radius: var(--border-radius);
+}
+
+.signup-btn:hover {
+  background-color: #c70812;
+  color: white;
+}
+
+/* ---------- Mobile Menu Toggle ---------- */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  z-index: 101;
+}
+
+.menu-toggle span {
+  width: 25px;
+  height: 3px;
+  background-color: var(--text-color);
+  margin: 2px 0;
+  transition: all 0.3s ease;
+}
+
+.menu-toggle span.active:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.menu-toggle span.active:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-toggle span.active:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+.nav-links.show {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 70px;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.95);
+  padding: var(--spacing-md);
+  z-index: 100;
+}
+
+/* ---------- Footer ---------- */
+footer {
+  border-top: 1px solid var(--border-color);
+  padding: var(--spacing-lg) 0;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.copyright {
+  color: var(--text-secondary);
+  font-size: var(--font-xs);
+}
+
+.footer-links {
+  display: flex;
+  gap: var(--spacing-lg);
+}
+
+.footer-links a {
+  font-size: var(--font-xs);
+  font-weight: 500;
+}
+
+/* ---------- Form Elements ---------- */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"],
+input[type="number"],
+input[type="date"],
+select,
+textarea {
+  width: 100%;
+  padding: var(--spacing-sm);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  background-color: #222;
+  color: var(--text-color);
+  transition: border-color 0.3s ease;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: var(--primary-color);
+  outline: none;
+}
+
+.form-group {
+  margin-bottom: var(--spacing-md);
+}
+
+label {
+  display: block;
+  margin-bottom: var(--spacing-xs);
+  font-weight: 500;
+}
+
+.error-message {
+  color: var(--error-color);
+  font-size: var(--font-xs);
+  margin-top: 5px;
+  min-height: 18px;
+}
+
+/* ---------- Buttons ---------- */
+.btn-primary {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #c70812;
+  color: white;
+}
+
+.btn-secondary {
+  background-color: transparent;
+  border: 1px solid var(--text-color);
+  color: var(--text-color);
+}
+
+.btn-secondary:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* ---------- Section Headers ---------- */
+.section-header {
+  text-align: center;
+  margin-bottom: var(--spacing-xl);
+}
+
+.section-header h2 {
+  font-size: var(--font-lg);
+  margin-bottom: var(--spacing-xs);
+}
+
+.section-header p {
+  color: var(--text-secondary);
+}
+
+/* Add these common card styles to reduce duplication */
+
+/* ---------- Common Card Styles ---------- */
+.card,
+.movie-card,
+.theater-card,
+.experience-card,
+.info-card,
+.checkout-card {
+  background-color: var(--card-background);
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid var(--border-color);
+}
+
+.card:hover,
+.movie-card:hover,
+.theater-card:hover,
+.experience-card:hover,
+.info-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Common card content styles */
+.card-content,
+.movie-info,
+.theater-info,
+.experience-content,
+.info-content {
+  padding: var(--spacing-md);
+}
+
+/* Common image container styles */
+.card-image,
+.movie-poster,
+.theater-image,
+.experience-image {
+  position: relative;
+  overflow: hidden;
+}
+
+.card-image img,
+.movie-poster img,
+.theater-image img,
+.experience-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+/* Common button styles */
+.btn-action,
+.book-btn,
+.view-btn,
+.notify-btn,
+.showtime-btn,
+.continue-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-xs);
+  font-weight: 600;
+  border-radius: var(--border-radius);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+/* Primary action button */
+.btn-action.primary,
+.book-btn,
+.view-btn,
+.continue-btn {
+  background-color: var(--primary-color);
+  color: white;
+  padding: var(--spacing-sm) var(--spacing-md);
+}
+
+.btn-action.primary:hover,
+.book-btn:hover,
+.view-btn:hover,
+.continue-btn:hover {
+  background-color: #c70812;
+  color: white;
+}
+
+/* Secondary action button */
+.btn-action.secondary,
+.notify-btn,
+.showtime-btn {
+  background-color: transparent;
+  border: 1px solid var(--text-color);
+  color: var(--text-color);
+  padding: var(--spacing-xs) var(--spacing-sm);
+}
+
+.btn-action.secondary:hover,
+.notify-btn:hover,
+.showtime-btn:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Common form styles */
+.form-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.form-header {
+  text-align: center;
+  margin-bottom: var(--spacing-lg);
+}
+
+.form-message {
+  padding: var(--spacing-sm);
+  margin-bottom: var(--spacing-md);
+  border-radius: var(--border-radius);
+}
+
+.form-message.success {
+  background-color: rgba(39, 174, 96, 0.2);
+  color: #27ae60;
+  border: 1px solid #27ae60;
+}
+
+.form-message.error {
+  background-color: rgba(231, 76, 60, 0.2);
+  color: #e74c3c;
+  border: 1px solid #e74c3c;
+}
+
+/* Common grid layouts */
+.grid-layout {
+  display: grid;
+  gap: var(--spacing-lg);
+}
+
+.grid-2-col {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.grid-3-col {
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.grid-4-col {
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+/* Common utility classes */
+.text-center {
+  text-align: center;
+}
+
+.mb-sm {
+  margin-bottom: var(--spacing-sm);
+}
+
+.mb-md {
+  margin-bottom: var(--spacing-md);
+}
+
+.mb-lg {
+  margin-bottom: var(--spacing-lg);
+}
+
+.mb-xl {
+  margin-bottom: var(--spacing-xl);
+}
+
+/* Accessibility helper */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+/* Improve focus visibility for all interactive elements */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+[tabindex]:focus-visible {
+  outline: 3px solid var(--primary-color);
+  outline-offset: 2px;
+  box-shadow: 0 0 0 3px rgba(229, 9, 20, 0.3);
+}
+
+/* Add transition for smoother interactions */
+a,
+button,
+input,
+select,
+textarea,
+.movie-card,
+.theater-card {
+  transition: all 0.2s ease-in-out;
+}
+
+/* Consistent form styling */
+.form-success-message {
+  color: #27ae60;
+  background-color: rgba(39, 174, 96, 0.1);
+  border: 1px solid #27ae60;
+  padding: var(--spacing-sm);
+  border-radius: var(--border-radius);
+  margin-bottom: var(--spacing-md);
+}
+
+/* ---------- Cards ---------- */
+/*.card {
+    background-color: var(--card-background);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }*/
+
+/* ---------- Animations ---------- */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease forwards;
+}
+
+/* ---------- Responsive Design ---------- */
+@media (max-width: 992px) {
+  .menu-toggle {
+    display: flex;
+  }
+
+  nav .nav-links {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    gap: var(--spacing-md);
+    text-align: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    padding: 0 var(--spacing-sm);
+  }
+}
+
