@@ -1,0 +1,483 @@
+/* 
+* Main CSS file for the SeatReserve.lk homepage/
+*/
+
+/* ---------- Import Common Styles ---------- */
+@import url("common.css");
+
+/* ---------- Hero Section ---------- */
+.hero {
+  background: linear-gradient(to bottom, #111, #000);
+  padding: var(--spacing-xl) 0;
+}
+
+.hero-content {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hero h1 {
+  font-size: var(--font-xl);
+  margin-bottom: var(--spacing-md);
+}
+
+.hero p {
+  color: var(--text-secondary);
+  margin-bottom: var(--spacing-lg);
+  font-size: var(--font-md);
+}
+
+.search-box {
+  background-color: var(--card-background);
+  border-radius: var(--border-radius);
+  padding: var(--spacing-md);
+  margin-top: var(--spacing-lg);
+}
+
+.search-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--spacing-md);
+}
+
+.search-group {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+}
+
+.search-group label {
+  font-size: var(--font-xs);
+  font-weight: 500;
+}
+
+.input-icon {
+  position: relative;
+}
+
+.input-icon i {
+  position: absolute;
+  left: var(--spacing-sm);
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--text-secondary);
+}
+
+.input-icon input {
+  width: 100%;
+  padding: var(--spacing-sm) var(--spacing-sm) var(--spacing-sm) calc(var(--spacing-sm) * 2 + 16px);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  background-color: #222;
+  color: var(--text-color);
+}
+
+.search-btn {
+  background-color: var(--primary-color);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-xs);
+  padding: var(--spacing-sm);
+  border-radius: var(--border-radius);
+  font-weight: 600;
+  width: 100%;
+  margin-top: auto;
+}
+
+.search-btn:hover {
+  background-color: #c70812;
+}
+
+/* ---------- Movie Sections ---------- */
+.now-playing,
+.coming-soon {
+  padding: var(--spacing-xl) 0;
+}
+
+.coming-soon {
+  background-color: rgb(0, 0, 0);
+}
+
+.movie-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: var(--spacing-lg);
+}
+
+.movie-card {
+  background-color: var(--card-background);
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #141414;
+}
+
+.movie-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.movie-poster {
+  position: relative;
+  aspect-ratio: 2 / 3;
+  overflow: hidden;
+}
+
+.movie-poster img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.movie-card:hover .movie-poster img {
+  transform: scale(1.05);
+}
+
+.rating {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+  padding: var(--spacing-sm);
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+}
+
+.rating i {
+  color: gold;
+}
+
+.movie-info {
+  padding: var(--spacing-md);
+}
+
+.movie-info h3 {
+  margin-bottom: var(--spacing-xs);
+  font-size: var(--font-md);
+}
+
+.movie-meta {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  margin-bottom: var(--spacing-xs);
+}
+
+.movie-rating {
+  font-size: var(--font-xs);
+  border: 1px solid var(--border-color);
+  padding: 0.1rem 0.3rem;
+  border-radius: 3px;
+}
+
+.movie-genre {
+  font-size: var(--font-xs);
+  color: var(--text-secondary);
+}
+
+.movie-duration {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  color: var(--text-secondary);
+  font-size: var(--font-xs);
+  margin-bottom: var(--spacing-sm);
+}
+
+.book-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-xs);
+  background-color: var(--primary-color);
+  color: white;
+  padding: var(--spacing-sm);
+  border-radius: var(--border-radius);
+  font-weight: 600;
+  width: 100%;
+}
+
+.book-btn:hover {
+  background-color: #c70812;
+  color: white;
+}
+
+.play-trailer {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.play-trailer i {
+  font-size: 3rem;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.2);
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.movie-card:hover .play-trailer {
+  opacity: 1;
+}
+
+.release-date {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  color: var(--text-secondary);
+  font-size: var(--font-xs);
+  margin-bottom: var(--spacing-sm);
+}
+
+.notify-btn {
+  background-color: transparent;
+  border: 1px solid var(--text-color);
+  color: var(--text-color);
+  padding: var(--spacing-sm);
+  border-radius: var(--border-radius);
+  font-weight: 600;
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+.notify-btn:hover {
+  background-color: var(--text-color);
+  color: var(--background-color);
+}
+
+.view-all {
+  text-align: center;
+  margin-top: var(--spacing-xl);
+}
+
+.view-all-btn {
+  display: inline-block;
+  border: 1px solid var(--text-color);
+  color: var(--text-color);
+  padding: var(--spacing-sm) var(--spacing-lg);
+  border-radius: var(--border-radius);
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.view-all-btn:hover {
+  background-color: var(--text-color);
+  color: var(--background-color);
+}
+
+/* ---------- Why Choose Us Section ---------- */
+.why-choose-us {
+  padding: var(--spacing-xl) 0;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-xl);
+  align-items: center;
+}
+
+.features-content h2 {
+  font-size: var(--font-lg);
+  margin-bottom: var(--spacing-sm);
+}
+
+.features-content > p {
+  color: var(--text-secondary);
+  margin-bottom: var(--spacing-lg);
+}
+
+.features {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-md);
+}
+
+.feature {
+  display: flex;
+  gap: var(--spacing-sm);
+}
+
+.feature i {
+  color: var(--primary-color);
+  font-size: var(--font-md);
+}
+
+.feature h3 {
+  margin-bottom: var(--spacing-xs);
+}
+
+.feature p {
+  color: var(--text-secondary);
+  font-size: var(--font-xs);
+}
+
+.features-image img {
+  border-radius: var(--border-radius);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ---------- Newsletter Section ---------- */
+.newsletter {
+  background-color: #0a0a0a;
+  padding: var(--spacing-xl) 0;
+}
+
+.newsletter-content {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.newsletter h2 {
+  font-size: var(--font-lg);
+  margin-bottom: var(--spacing-sm);
+}
+
+.newsletter p {
+  color: var(--text-secondary);
+  margin-bottom: var(--spacing-lg);
+}
+
+.form-group {
+  display: flex;
+  gap: var(--spacing-xs);
+}
+
+.form-group input {
+  flex: 1;
+  padding: var(--spacing-sm);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  background-color: #222;
+  color: var(--text-color);
+}
+
+.form-group button {
+  background-color: var(--primary-color);
+  color: white;
+  padding: var(--spacing-sm) var(--spacing-lg);
+  border-radius: var(--border-radius);
+  font-weight: 600;
+}
+
+.form-group button:hover {
+  background-color: #c70812;
+}
+
+.form-disclaimer {
+  font-size: var(--font-xs);
+  color: var(--text-secondary);
+  margin-top: var(--spacing-sm);
+}
+
+/* ---------- Responsive Design ---------- */
+@media (max-width: 992px) {
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .features-image {
+    order: -1;
+  }
+}
+
+@media (max-width: 768px) {
+  nav,
+  .auth-buttons .login-btn {
+    display: none;
+  }
+
+  .mobile-menu-btn {
+    display: block;
+  }
+
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .features {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 576px) {
+  .search-row {
+    grid-template-columns: 1fr;
+  }
+
+  .movie-grid {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+
+  .form-group {
+    flex-direction: column;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .movie-card {
+    min-width: 100%;
+  }
+
+  .movie-poster {
+    height: auto;
+    aspect-ratio: 2 / 3;
+  }
+
+  .movie-info h3 {
+    font-size: 1.2rem;
+  }
+
+  .book-btn,
+  .notify-btn {
+    padding: var(--spacing-xs) var(--spacing-sm);
+    font-size: 0.9rem;
+  }
+
+  .features {
+    gap: var(--spacing-sm);
+  }
+
+  .feature i {
+    font-size: 1.2rem;
+  }
+
+  .feature h3 {
+    font-size: 1rem;
+  }
+
+  .footer-links {
+    gap: var(--spacing-sm);
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
